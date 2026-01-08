@@ -85,6 +85,7 @@ resource "aws_instance" "My_EC2_instance"{
 
 
 resource "aws_key_pair" "Mykey" {
-    public_key = file("~/id_ed25519.pub")
+    public_key = file("/home/ubuntu/.ssh/id_ed25519.pub")
+
     key_name = "Mykey"
 }
